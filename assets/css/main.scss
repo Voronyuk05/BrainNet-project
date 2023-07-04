@@ -1,0 +1,20 @@
+@import './elements/header';
+@import './global/typography';
+@import './elements/hero';
+@import './elements/slider';
+@import './elements/clients';
+@import './elements/services';
+@import './elements/testimonials';
+@import './elements/FaQ';
+@import './elements/get-started';
+@import './elements//footer';
+
+body {
+    background: #00070c;
+    background-image: url('./../images/MainBG.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    width: 100%;
+    overflow-x: hidden;
+}

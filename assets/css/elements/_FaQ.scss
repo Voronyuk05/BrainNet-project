@@ -1,0 +1,83 @@
+body {
+    main {
+        .FAQ {
+            width: 100%;
+            margin-top: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .container {
+                width: 83%;
+                display: inline-flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                flex-shrink: 0;
+                .title {
+                    height: 135px;
+                    width: 200px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+                .questions {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: center;
+                    .question-card {
+                        width: 100%;
+                        height: 92px;
+                        transition: 0.5s;
+                        .question {
+                            width: 100%;
+                            display: flex;
+                            height: 92px;
+                            padding: 29.906px 32px 30.094px 32px;
+                            justify-content: space-between;
+                            align-items: center;
+                            border-top: 1px solid rgba(228, 231, 237, 0.30);
+                        }
+                        .answer {
+                            display: none;
+                        }
+                    }
+                    .active-card {
+                        background-color: #000a19;
+                        width: 100%;
+                        height: 236px;
+                        flex-shrink: 0;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: flex-start;
+                        .question {
+                            width: 100%;
+                            display: flex;
+                            height: 92px;
+                            padding: 29.906px 32px 30.094px 32px;
+                            justify-content: space-between;
+                            align-items: flex-start;
+                            gap: 682px;
+                            border-top: 1px solid rgba(228, 231, 237, 0.30);
+                        }
+                        .answer {
+                            display: flex;
+                            width: 100%;
+                            padding: 29.906px 32px 30.094px 32px;
+                            height: 126px;
+                            flex-direction: column;
+                            justify-content: flex-start;
+                            flex-shrink: 0;
+                            p {
+                                text-align: start;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
