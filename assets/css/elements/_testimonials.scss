@@ -67,3 +67,44 @@ body {
         }
     }
 }
+
+
+@media screen and (max-width: 390px) {
+    body {
+        main {
+            .testimonials {
+                margin-top: 112px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .container {
+                    background: rgba(26, 45, 71, 0.3);
+                    backdrop-filter: blur(20px);
+                    border-radius: 25px;
+                    width: 90%;
+                    height: 776px;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    overflow: hidden;
+                    .title {
+                        width: 350px;
+                    }
+                    .content {
+                        .comments {
+                            .comment-card {
+                                width: 170px;
+                                height: 200px;
+                                .card-body {
+                                }
+                            }                        
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}

@@ -81,3 +81,24 @@ body {
         }
     }
 }
+
+
+
+@media screen and (max-width: 390px) {
+    body {
+        main {
+            .FAQ {
+                .container {
+                    .questions {
+                        .active-card {
+                            .question {
+                                gap: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}

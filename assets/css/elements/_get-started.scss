@@ -42,3 +42,21 @@ body {
         }
     }
 }
+
+@media screen and (max-width: 390px) {
+    body {
+        main {
+            .get-started {
+                .container {
+                    height: 330px;
+                    .content {
+                        height: 300px;
+                        h2 {
+                            width: 250px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

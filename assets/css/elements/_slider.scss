@@ -1,12 +1,10 @@
 body {
-
     main {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         .slider {
-            min-height: 535px;
             margin-top: 360px;
             width: 300%;
             position: relative;
@@ -74,6 +72,48 @@ body {
                             content: '';
                             opacity: 0;
                             transition: 1s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 390px)  {
+    body {
+        main {
+            .slider {
+                margin-top: 0px;
+                height: 400px;
+                .container {
+                    .slides {
+                        .slide-card {
+                            width: 280px;
+                            height: 200px;
+                            &::after {
+                                width: 0%;
+                            }
+                            .card-body {
+                                p {
+                                    width: 240px;
+                                    height: 72px;
+                                    text-align: start;
+                                }
+                                .pill-btn {
+                                    width: 70px;
+                                    font-size: 7px;
+                                    padding: 1px;
+                                    height: 15px;
+                                    img {
+                                        width: 5px;
+                                    }
+                                }
+                            }
+                        }
+                        .active {
+                            width: 300px;
+                            height: 210px;
                         }
                     }
                 }

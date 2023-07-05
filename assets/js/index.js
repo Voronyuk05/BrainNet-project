@@ -54,14 +54,16 @@ btnNext.addEventListener('click', switchCard)
 btnPrev.addEventListener('click', switchCard)
 function switchCard(event) {
     cards[switchTo/1].classList.remove('active')
-    if (event.currentTarget.id === 'next') {
+    if (event.target.id === 'next') {
         switchTo += 1
-        slides.style.transform += `translateX(-1000px)`
+        const cardWidth = cards[switchTo/1].clientWidth
+        slides.style.transform += `translateX(-${cardWidth}px)`
         cards[switchTo/1].classList.add('active')
     }
-    if (event.currentTarget.id === 'prev') {
+    if (event.target.id === 'prev') {
         switchTo -= 1
-        slides.style.transform += `translateX(1000px)`
+        const cardWidth = cards[switchTo/1].clientWidth
+        slides.style.transform += `translateX(${cardWidth}px)`
         cards[switchTo/1].classList.add('active')
     }
     btnPrev.disabled = switchTo === 0
@@ -179,7 +181,7 @@ const Comments = {
             photo: 'assets/images/Ellipse 47.png',
             name: 'Joe Smith',
             text: 'global community is proof that you can be a successful freelancer no matter where you live. Collaborate, network,',
-            stars: 0,
+            stars: 4,
         }
     ]
 }
@@ -236,17 +238,18 @@ const commentPrevBtn = document.querySelector('button#comment-prev')
 commentPrevBtn.disabled = commentSwitch === 0
 commentNextBtn.disabled = switchTo === commentsLength
 const commentSlider = document.querySelector('.comments.slides')
+const commentCardWidtn = document.querySelector('.comment-card').clientWidth
 commentNextBtn.addEventListener('click', switchComentCard)
 commentPrevBtn.addEventListener('click', switchComentCard)
 
 function switchComentCard(event) {
     if (event.currentTarget.id === 'comment-next') {
         commentSwitch += 1
-        commentSlider.style.transform += `translateX(277px)`
+        commentSlider.style.transform += `translateX(${commentCardWidtn + 25}px)`
     }
     if (event.currentTarget.id === 'comment-prev') {
         commentSwitch -= 1
-        commentSlider.style.transform += `translateX(-277px)`
+        commentSlider.style.transform += `translateX(-${commentCardWidtn +25}px)`
     }
     commentPrevBtn.disabled = commentSwitch === 0
     commentNextBtn.disabled = commentSwitch === commentsLength

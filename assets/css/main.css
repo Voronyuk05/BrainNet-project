@@ -113,7 +113,6 @@ h1, h2 {
   font-style: normal;
   font-weight: 700;
   font-size: 73px;
-  line-height: 92px;
   text-align: center;
   color: #FFFFFF;
 }
@@ -377,7 +376,7 @@ select:hover {
     text-transform: uppercase;
   }
   h4 {
-    font-size: 12px;
+    font-size: 8px;
     font-family: Inter;
     font-weight: 600;
     line-height: 190%;
@@ -491,7 +490,7 @@ body main .hero .container .title {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 521px;
+    height: 421px;
   }
   body main .hero .container {
     width: 324px;
@@ -516,7 +515,6 @@ body main {
   align-items: center;
 }
 body main .slider {
-  min-height: 535px;
   margin-top: 360px;
   width: 300%;
   position: relative;
@@ -590,6 +588,37 @@ body main .slider .container .slides .active::after {
   transition: 1s;
 }
 
+@media screen and (max-width: 390px) {
+  body main .slider {
+    margin-top: 0px;
+    height: 400px;
+  }
+  body main .slider .container .slides .slide-card {
+    width: 280px;
+    height: 200px;
+  }
+  body main .slider .container .slides .slide-card::after {
+    width: 0%;
+  }
+  body main .slider .container .slides .slide-card .card-body p {
+    width: 240px;
+    height: 72px;
+    text-align: start;
+  }
+  body main .slider .container .slides .slide-card .card-body .pill-btn {
+    width: 70px;
+    font-size: 7px;
+    padding: 1px;
+    height: 15px;
+  }
+  body main .slider .container .slides .slide-card .card-body .pill-btn img {
+    width: 5px;
+  }
+  body main .slider .container .slides .active {
+    width: 300px;
+    height: 210px;
+  }
+}
 body main .our-clients {
   display: flex;
   justify-content: center;
@@ -615,6 +644,25 @@ body main .our-clients .container .title {
   align-items: center;
 }
 
+@media screen and (max-width: 390px) {
+  body main .our-clients {
+    height: 300px;
+    margin-top: 0px;
+  }
+  body main .our-clients .container {
+    width: 98%;
+    height: 100%;
+    gap: 30px;
+  }
+  body main .our-clients .container .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body main .our-clients .container .content img {
+    width: 110%;
+  }
+}
 body main .services {
   margin-top: 243px;
   width: 100%;
@@ -637,7 +685,6 @@ body main .services .container .card {
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 body main .services .container .card .card-img {
   width: 50%;
@@ -661,6 +708,21 @@ body main .services .container .card-reverse {
   align-items: flex-end;
 }
 
+@media screen and (max-width: 390px) {
+  body main .services {
+    margin-top: 100px;
+  }
+  body main .services .container .card {
+    gap: 30px;
+    flex-direction: column;
+  }
+  body main .services .container .card .card-img {
+    width: 100%;
+  }
+  body main .services .container .card .card-body {
+    width: 100%;
+  }
+}
 body main .testimonials {
   margin-top: 112px;
   width: 100%;
@@ -728,6 +790,35 @@ body main .testimonials .container .content .comments .comment-card .card-body p
   text-align: start;
 }
 
+@media screen and (max-width: 390px) {
+  body main .testimonials {
+    margin-top: 112px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body main .testimonials .container {
+    background: rgba(26, 45, 71, 0.3);
+    -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+    border-radius: 25px;
+    width: 90%;
+    height: 776px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow: hidden;
+  }
+  body main .testimonials .container .title {
+    width: 350px;
+  }
+  body main .testimonials .container .content .comments .comment-card {
+    width: 170px;
+    height: 200px;
+  }
+}
 body main .FAQ {
   width: 100%;
   margin-top: 120px;
@@ -808,6 +899,11 @@ body main .FAQ .container .questions .active-card .answer p {
   text-align: start;
 }
 
+@media screen and (max-width: 390px) {
+  body main .FAQ .container .questions .active-card .question {
+    gap: 0;
+  }
+}
 body main .get-started {
   margin-top: 120px;
   width: 100%;
@@ -849,6 +945,17 @@ body main .get-started .container .content .btns {
   gap: 36px;
 }
 
+@media screen and (max-width: 390px) {
+  body main .get-started .container {
+    height: 330px;
+  }
+  body main .get-started .container .content {
+    height: 300px;
+  }
+  body main .get-started .container .content h2 {
+    width: 250px;
+  }
+}
 body footer {
   margin-top: 120px;
   width: 100%;
@@ -882,7 +989,6 @@ body footer .container .top-side .footer-cards {
 }
 body footer .container .top-side .footer-cards .card {
   width: 250.203px;
-  height: 405.469px;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
@@ -912,6 +1018,38 @@ body footer .container .bottom-side .social-networks {
   gap: 60px;
 }
 
+@media screen and (max-width: 390px) {
+  body footer {
+    padding: 0px;
+    margin-top: 0px;
+  }
+  body footer .container {
+    height: 1650px;
+    width: 97%;
+    align-items: center;
+  }
+  body footer .container .top-side {
+    flex-direction: column;
+    height: 1600px;
+    gap: 40px;
+    justify-content: center;
+  }
+  body footer .container .top-side .logo {
+    display: none;
+  }
+  body footer .container .top-side .footer-cards {
+    flex-direction: column;
+    gap: 70px;
+    width: 100%;
+    align-items: flex-start;
+  }
+  body footer .container .bottom-side {
+    flex-direction: column;
+    height: 60px;
+    width: 100%;
+    align-items: center;
+  }
+}
 body {
   background: #00070c;
   background-image: url("./../images/MainBG.png");

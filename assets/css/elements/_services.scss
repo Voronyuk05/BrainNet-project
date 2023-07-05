@@ -20,7 +20,6 @@ body {
                     flex-direction: row;
                     align-items: flex-start;
                     justify-content: space-between;
-                    flex-wrap: wrap;
                     .card-img {
                         width: 50%;
                         border-radius: 25px; 
@@ -46,4 +45,31 @@ body {
             }
         }
     }
+}
+
+
+@media screen and (max-width: 390px) {
+    body {
+        main {
+            .services {
+                margin-top: 100px;
+                .container {
+                    .card {
+                        gap: 30px;
+                        flex-direction: column;
+                        .card-img {    
+                            width: 100%;
+                        }
+                        .card-body {
+                            width: 100%;
+                        }
+                    }
+                    .card-reverse {
+                    }
+                }
+            }
+        }
+    }
+    
+    
 }
